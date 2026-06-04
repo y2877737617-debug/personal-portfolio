@@ -6,6 +6,8 @@
 
 - Created the GitHub-ready project record structure for “个人作品集”.
 - Added README, project log, prompt archive, and decision log.
+- Created the GitHub repository `y2877737617-debug/personal-portfolio`.
+- Initialized the local Git repository and pushed `main` to GitHub.
 
 ### Why
 
@@ -15,5 +17,4 @@
 ### Next
 
 - Add the actual personal portfolio project files.
-- Install Git locally so Codex can create commits and push normally.
-- Connect this folder to the GitHub repository `personal-portfolio`.
+- Continue using `docs/log.md` and `docs/prompts.md` to record Codex-assisted project changes.
