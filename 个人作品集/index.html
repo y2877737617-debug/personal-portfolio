@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="大YE，专注快食品、饮料与生活方式品牌的包装设计师。"
+    />
+    <title>大YE | Packaging Designer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="access-gate" id="access-gate">
+      <div class="gate-panel">
+        <p>PRIVATE PORTFOLIO · 私密作品集</p>
+        <h2>大YE<br /><em>作品预览</em></h2>
+        <form class="gate-form" id="gate-form">
+          <label for="gate-password">请输入访问密码</label>
+          <div class="gate-input-row">
+            <input
+              id="gate-password"
+              name="password"
+              type="password"
+              inputmode="numeric"
+              autocomplete="current-password"
+              placeholder="PASSWORD"
+              required
+            />
+            <button type="submit">进入 →</button>
+          </div>
+          <p class="gate-error" id="gate-error" aria-live="polite"></p>
+        </form>
+        <small>PACKAGING DESIGN · JINHUA</small>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark">Y</span>
+        <span class="brand-name">大YE<small>PACKAGING DESIGNER</small></span>
+      </a>
+      <button class="menu-button" type="button" aria-label="打开导航" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="主要导航">
+        <a href="#work">作品</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-kicker reveal">PACKAGING DESIGN · JINHUA</div>
+        <h1 class="reveal">让设计<br /><em>拥抱</em>生活。</h1>
+        <div class="hero-bottom reveal">
+          <p>
+            大YE 是一名包装设计师，关注快食品、饮料与生活方式品牌。
+            在日常消费里寻找被看见、被记住，也愿意被带回家的设计。
+          </p>
+          <a class="circle-link" href="#work" aria-label="浏览作品">
+            <span>↓</span>
+            <small>VIEW<br />WORK</small>
+          </a>
+        </div>
+        <div class="hero-line"></div>
+      </section>
+
+      <section class="work-section" id="work">
+        <div class="section-heading reveal">
+          <p>SELECTED WORKS · 2026</p>
+          <h2>精选作品</h2>
+          <span>01 — 06</span>
+        </div>
+        <div class="project-list" id="project-list"></div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-label reveal">ABOUT / 关于我</div>
+        <div class="about-grid">
+          <h2 class="reveal">
+            做生活里<br />
+            <em>看得见</em>的设计
+          </h2>
+          <div class="about-copy reveal">
+            <p class="lead">
+              从事包装设计的小小设计师。专注于快食品、饮料与生活方式品牌，
+              对包装设计有自己的理解。
+            </p>
+            <p>
+              我相信好的包装不是表面的装饰，而是品牌与生活产生联系的第一步。
+              从货架上的一眼，到打开产品的片刻，设计应该自然、有记忆点，也足够真诚。
+            </p>
+          </div>
+          <dl class="profile reveal">
+            <div><dt>姓名</dt><dd>大YE</dd></div>
+            <div><dt>城市</dt><dd>金华市婺城区</dd></div>
+            <div><dt>经验</dt><dd>5 年</dd></div>
+            <div><dt>方向</dt><dd>包装设计 / 品牌视觉</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <p class="reveal">CONTACT / 保持联系</p>
+        <h2 class="reveal">一起做点<br /><em>有意思</em>的事。</h2>
+        <div class="contact-bottom reveal">
+          <span>AVAILABLE FOR PROJECTS</span>
+          <a href="#top">回到顶部 ↑</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 大YE</span>
+      <span>PACKAGING · BRAND · VISUAL</span>
+    </footer>
+
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+      <div class="modal-bar">
+        <button class="modal-close" type="button" aria-label="关闭项目详情">← 返回作品</button>
+        <span id="modal-count">01 / 06</span>
+      </div>
+      <article class="modal-content">
+        <header class="modal-header">
+          <p id="modal-meta"></p>
+          <h2 id="modal-title"></h2>
+          <div class="modal-intro">
+            <span id="modal-category"></span>
+            <p id="modal-desc"></p>
+          </div>
+        </header>
+        <div class="modal-gallery" id="modal-gallery"></div>
+        <div class="modal-footer">
+          <button class="modal-close" type="button">← 返回作品</button>
+          <button class="next-project" type="button">下一个项目 →</button>
+        </div>
+      </article>
+    </div>
+
+    <script src="project-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
